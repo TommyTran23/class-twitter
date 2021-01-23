@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="node_modules/bulma/css/bulma.css"">
+    <title>Twitter App</title>
+</head>
+
+<body id=" wrapper">
+
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item">
+                <h1 class="title resetPage">Comp 426 Twitter</h1>
+            </a>
+        </div>
+    </nav>
+
+    <div class="columns">
+        <div class="column is-one-third"></div>
+        <div class="column is-one-third">
+            <button class="tweetform button is-primary">Send a tweet!</button>
+            <br><br>
+
+            <div class="notification is-info noteforComments">
+                <button class="delete deleteNotif"></button>
+                Note: press on a tweet to view comments
+            </div>
+
+            <div id="tweets"></div>
+        </div>
+        <div class="column is-one-third"></div>
+    </div>
+
+
+
+    <!--js scripts-->
+    <script src="node_modules/axios/dist/axios.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="main.js" type="module"></script>
+    </body>
+
+</html>
